@@ -1,0 +1,18 @@
+.block {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  position: absolute;
+  left: var(--corX);
+  top: var(--corY);
+  z-Index: 1;
+  animation: dropAnimation 2s ease-in-out forwards;
+}
+@keyframes dropAnimation {
+  0% {
+    top: var(--corY);
+  }
+  100% {
+    top: var(--bottom);
+  }
+}
